@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @posting.job_type %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @posting.title %>
+</p>
+
+<p>
+  <strong>Compensation:</strong>
+  <%= @posting.compensation %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @posting.location %>
+</p>
+
+<p>
+  <strong>Pitch:</strong>
+  <%= @posting.pitch %>
+</p>
+
+<%= link_to 'Edit', edit_posting_path(@posting) %> |
+<%= link_to 'Back', postings_path %>

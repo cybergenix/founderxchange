@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  title: MyString
+  compensation: MyString
+  location: MyString
+  pitch: MyText
+
+two:
+  type: 
+  title: MyString
+  compensation: MyString
+  location: MyString
+  pitch: MyText
