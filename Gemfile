@@ -12,6 +12,8 @@ gem 'bootstrap-sass', '~> 3.3.3'
 gem 'devise'
 gem 'simple_form'
 gem 'country_select'
+gem "paperclip", "~> 4.2"
+
 
 
    

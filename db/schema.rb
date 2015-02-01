@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150201120439) do
+ActiveRecord::Schema.define(version: 20150201140749) do
 
   create_table "postings", force: true do |t|
     t.string   "job_type"
@@ -41,6 +41,10 @@ ActiveRecord::Schema.define(version: 20150201120439) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string   "name"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
