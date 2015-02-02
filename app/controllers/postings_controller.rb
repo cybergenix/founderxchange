@@ -22,6 +22,7 @@ class PostingsController < ApplicationController
 
   def create
     @posting = Posting.new(posting_params)
+    @posting.user_id = current_user.id
     @posting.save
     respond_with(@posting)
   end

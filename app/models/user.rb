@@ -10,4 +10,6 @@ class User < ActiveRecord::Base
   validates :name, presence: true
   validates_attachment_presence :image, presence: true
 
+  has_many :postings, dependent: :destroy
+
 end
