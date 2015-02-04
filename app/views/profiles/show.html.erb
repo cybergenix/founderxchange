@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Expertise:</strong>
+  <%= @profile.expertise %>
+</p>
+
+<p>
+  <strong>Seeking:</strong>
+  <%= @profile.seeking %>
+</p>
+
+<p>
+  <strong>Partner role:</strong>
+  <%= @profile.partner_role %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @profile.about %>
+</p>
+
+<p>
+  <strong>Experience:</strong>
+  <%= @profile.experience %>
+</p>
+
+<p>
+  <strong>Prefer age:</strong>
+  <%= @profile.prefer_age %>
+</p>
+
+<p>
+  <strong>Equity type:</strong>
+  <%= @profile.equity_type %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>

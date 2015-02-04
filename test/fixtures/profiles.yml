@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  expertise: MyString
+  seeking: MyString
+  partner_role: MyString
+  about: MyText
+  experience: MyString
+  prefer_age: MyString
+  equity_type: MyString
+
+two:
+  expertise: MyString
+  seeking: MyString
+  partner_role: MyString
+  about: MyText
+  experience: MyString
+  prefer_age: MyString
+  equity_type: MyString

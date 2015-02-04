@@ -43,6 +43,6 @@ class PostingsController < ApplicationController
     end
 
     def posting_params
-      params.require(:posting).permit(:job_type, :title, :compensation, :location, :pitch)
+      params.require(:posting).permit(:job_type, :title, :compensation, :pitch)
     end
 end

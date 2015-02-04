@@ -4,7 +4,6 @@ class CreatePostings < ActiveRecord::Migration
       t.string :job_type
       t.string :title
       t.string :compensation
-      t.string :location
       t.text :pitch
 
       t.timestamps
