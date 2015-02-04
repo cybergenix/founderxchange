@@ -11,5 +11,5 @@ class User < ActiveRecord::Base
   validates_attachment_presence :image, presence: true
 
   has_many :postings, dependent: :destroy
-
+  has_one :profile, dependent: :destroy
 end
