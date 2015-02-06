@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable #, :confirmable
+         :recoverable, :rememberable, :trackable, :validatable, :confirmable
 
   validates :name, presence: true
   validates_attachment_presence :image, presence: true
