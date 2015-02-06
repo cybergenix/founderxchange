@@ -1,3 +1,5 @@
+<div class="profile-show">
+
 <p id="notice"><%= notice %></p>
 
 <p><%= "Profile of #{@profile.user.name}" %></p>
@@ -12,9 +14,13 @@
   <%= @profile.seeking %>
 </p>
 
+<% if false %>
+<% #Function to return option stored in the database from the hash map. %>
+<% end %>
 <p>
-  <strong>Partner role:</strong>
-  <%= @profile.partner_role %>
+  <strong>To be my:</strong>
+  <%= @profile.return_partner_role %>
+  <%#=@profile.partner_role %>
 </p>
 
 <p>
@@ -39,3 +45,5 @@
 
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
 <%= link_to 'Back', profiles_path %>
+
+</div>

@@ -2,7 +2,7 @@
 @import "bootstrap";
 
 body {
-  background-color: #F5F5F1;
+  background-color: #E6E6E6;
   color: #333333;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -24,6 +24,14 @@ body {
   color: #0192B5;
 }
 
+.center {
+  text-align: center;
+}
+
+.col-md-3:nth-child(4n+1) {
+  clear: left;
+}
+
 /*Code to override asterix being shown for required fields in forms */
 abbr[title="required"] {
   display: none;
@@ -41,3 +49,7 @@ abbr[title="required"] {
     text-align: center;
     img { width: 100% }
 }
+
+.profile-show {
+  background-color: #FFFFFF
+} 

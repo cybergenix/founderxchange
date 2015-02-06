@@ -1,3 +1,5 @@
+<h1>Founder Profiles</h1>
+
 <div class="center">
   <div class="row">
     <% @profiles.each do |profile| %>
@@ -17,42 +19,5 @@
 
 
 
-
-
-
-
-
-<h1>Listing profiles</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Expertise</th>
-      <th>Seeking</th>
-      <th>Partner role</th>
-      <th>About</th>
-      <th>Experience</th>
-      <th>Prefer age</th>
-      <th>Equity type</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @profiles.each do |profile| %>
-      <tr>
-        <td><%= profile.expertise %></td>
-        <td><%= profile.seeking %></td>
-        <td><%= profile.partner_role %></td>
-        <td><%= profile.about %></td>
-        <td><%= profile.experience %></td>
-        <td><%= profile.prefer_age %></td>
-        <td><%= profile.equity_type %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
 
 <%= link_to 'New Profile', new_profile_path %>
