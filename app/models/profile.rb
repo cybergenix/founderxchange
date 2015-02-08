@@ -15,4 +15,5 @@ def return_partner_role
   end
 
       belongs_to :user
+      belongs_to :category
 end

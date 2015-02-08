@@ -4,7 +4,7 @@
   <div class="form-inputs">
     <%= f.input :expertise %>
     <%= f.input :seeking %>
-    <%= f.input :partner_role, :collection => Profile::PARTNER_ROLE.sort.map {|k,v| [v,k]} %>
+    <%= f.collection_select :category_id, Category.all, :id, :partner_role, {promt: "Choose a category" }, input_html: { class: "dropdown-toggle" } %>
     <%= f.input :about %>
     <%= f.input :experience %>
     <%= f.input :prefer_age %>

@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150204095303) do
+ActiveRecord::Schema.define(version: 20150208175507) do
+
+  create_table "categories", force: true do |t|
+    t.string   "partner_role"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "postings", force: true do |t|
     t.string   "job_type"
@@ -26,7 +32,6 @@ ActiveRecord::Schema.define(version: 20150204095303) do
   create_table "profiles", force: true do |t|
     t.string   "expertise"
     t.string   "seeking"
-    t.string   "partner_role"
     t.text     "about"
     t.string   "experience"
     t.string   "prefer_age"
@@ -34,6 +39,7 @@ ActiveRecord::Schema.define(version: 20150204095303) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.integer  "category_id"
   end
 
   create_table "users", force: true do |t|
