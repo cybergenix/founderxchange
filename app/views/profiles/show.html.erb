@@ -1,8 +1,14 @@
 <div class="profile-show">
-
+<div class="container">
+<div class="center">
+  <div class="row">
+<div class="col-md-6.col-md-offset-3">
+</div>
 <p id="notice"><%= notice %></p>
 
-<p><%= "Profile of #{@profile.user.name}" %></p>
+<p><h1><%= "Profile of #{@profile.user.name}" %></h1></p>
+
+<strong>
 
 <p>
   <strong>Expertise:</strong>
@@ -44,7 +50,12 @@
   <%= @profile.equity_type %>
 </p>
 
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
-<%= link_to 'Back', profiles_path %>
+</strong>
 
+<%= link_to 'Edit', edit_profile_path(@profile), class: "btn btn-sml btn-primary" %> 
+<%= link_to 'Back', profiles_path, class: "btn btn-sml btn-primary" %>
+
+</div>
+</div>
+</div>
 </div>

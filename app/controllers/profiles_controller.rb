@@ -5,8 +5,13 @@ class ProfilesController < ApplicationController
   respond_to :html
 
   def index
+  if params[:category].blank?
     @profiles = Profile.all
     respond_with(@profiles)
+  else
+      @category_id = Category.find_by(partner_role: params[:category]).id
+      @profiles = Profile.where(category_id: @category_id).order("created_at DESC")
+    end  
   end
 
   def show
@@ -44,6 +49,7 @@ class ProfilesController < ApplicationController
     end
 
     def profile_params
-      params.require(:profile).permit(:expertise, :seeking, :category_id, :about, :experience, :prefer_age, :equity_type)
+      params.require(:profile).permit(:expertise, :seeking, :category_id, :about, :experience, :prefer_age, :equity_type, :category_id)
     end
+
 end

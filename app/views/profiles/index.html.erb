@@ -1,3 +1,8 @@
+<% Category.all.each do |category| %>
+<%= link_to category.partner_role, profiles_path(category: category.partner_role) %>
+
+<% end %>
+
 <h1>Founder Profiles</h1>
 
 <div class="center">
@@ -20,4 +25,5 @@
 
 
 
-<%= link_to 'New Profile', new_profile_path %>
+<button type="button" class="btn btn-default"><%= link_to 'New Profile', new_profile_path %>
+</button>
