@@ -13,6 +13,8 @@ gem 'devise'
 gem 'simple_form'
 gem 'country_select'
 gem "paperclip", "~> 4.2"
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 
 

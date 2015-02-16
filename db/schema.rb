@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150208175507) do
+ActiveRecord::Schema.define(version: 20150216160423) do
 
   create_table "categories", force: true do |t|
     t.string   "partner_role"
@@ -64,6 +64,8 @@ ActiveRecord::Schema.define(version: 20150208175507) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.string   "provider"
+    t.string   "uid"
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
