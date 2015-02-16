@@ -21,7 +21,8 @@ Founder</font><font color="#333333">Xchange</font></a>
      <ul class="nav navbar-nav navbar-right">
 
       <% if current_user %>
-        <li class="round-image-50"><%= image_tag(current_user.image.url(:thumb)) %></li>
+        <%#li class="round-image-50"><%= image_tag(current_user.image.url(:thumb)) %></#li>
+        <li class="round-image-50"><%= image_tag(current_user.normalimage)%></li>
         <li><%= link_to 'Find Partners',profiles_path %></li>
         <li><%= link_to 'Edit Profile',edit_user_registration_path %></li>
         <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>  
