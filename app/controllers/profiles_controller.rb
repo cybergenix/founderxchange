@@ -49,7 +49,7 @@ class ProfilesController < ApplicationController
     end
 
     def profile_params
-      params.require(:profile).permit(:expertise, :seeking, :category_id, :about, :experience, :prefer_age, :equity_type, :category_id)
+      params.require(:profile).permit(:expertise, :seeking, :category_id, :about, :experience, :prefer_age, :equity_type, :category_id, :avatar)
     end
 
 end

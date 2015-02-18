@@ -1,0 +1,6 @@
+app_key: "b63arj4ntv3jafb"
+app_secret: <%= ENV["DROPBOX_APP_SECRET"] %>
+access_token: "nwlllxstvo3u6xho"
+access_token_secret: <%= ENV["DROPBOX_ACCESS_TOKEN_SECRET"] %>
+user_id: "321380784"
+access_type: "app_folder"
