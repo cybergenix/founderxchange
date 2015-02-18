@@ -15,6 +15,10 @@ gem 'country_select'
 gem "paperclip", "~> 4.2"
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'omniauth-linkedin'
+gem 'omniauth-twitter' 
+gem "figaro"
+
 
 
 

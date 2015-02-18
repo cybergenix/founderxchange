@@ -17,5 +17,9 @@ Devise.setup do |config|
   # ==> OmniAuth
   #Add your ID and secret here
   #ID first, secret second
-  config.omniauth :facebook, "1554362851507931", "353de92248361a0ef3eb6d1975d642ec", {:client_options => {:ssl => {:verify => false}}}
+  config.omniauth :facebook, "1554362851507931", ENV["FACEBOOK_APP_SECRET"], {:client_options => {:ssl => {:verify => false}}}
+  
+  require 'omniauth-linkedin'
+  config.omniauth :linkedin, "78wdjhcflzl0sa", ENV["LINKEDIN_APP_SECRET"]
+
 end
