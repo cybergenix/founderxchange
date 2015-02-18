@@ -29,11 +29,13 @@
   <%### Yo =@profile.partner_role %>
 </p>
 
+<% if @profile.about.empty? %>
+<% else %>
 <p>
   <strong>About:</strong>
   <%= @profile.about %>
 </p>
-
+<% end %>
 
 
 
