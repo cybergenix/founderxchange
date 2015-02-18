@@ -19,6 +19,7 @@ gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
 gem 'omniauth-twitter' 
 gem "figaro"
+gem "ninefold"
 
 
 
@@ -27,7 +28,7 @@ gem "figaro"
 
 group :production do
   gem 'pg'
-  
+
 end
 
 group :development, :test do
